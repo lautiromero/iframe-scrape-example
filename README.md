@@ -1,7 +1,7 @@
 # iframe-scrape-example
 A small example of how to scrape an iframe with puppeteer
 
-To intal first run:
+To intall first run:
 
 npm install
 
