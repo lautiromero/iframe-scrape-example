@@ -28,6 +28,14 @@ import puppeteer from 'puppeteer';
 
   const h1Contents = await frame.$$eval('h1', elements => elements.map(el => el.textContent))
 
+  // Typing 
+  // await frame.focus('#email')
+  // await frame.keyboard.type('test54')
+
+  // OR
+
+  // await frame.type('input[name=username]', 'Lautaro', { delay: 50 });
+
   console.log(h1Contents[0])
 
 })()
