@@ -17,10 +17,12 @@ import puppeteer from 'puppeteer';
 
 
   const frameHandle = await page.$("iframe[title='W3Schools HTML Tutorial']");
+  // Find by id 
+  // const frameHandle = await page.$('#iframe');
 
   const frame = await frameHandle.contentFrame();
 
-
+  // By Url
   // const frames = await page.frames();
   // const frame = frames.find(f => f.url().includes('default'));
 
